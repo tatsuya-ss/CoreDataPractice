@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1053.6231884057972" y="123.88392857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Task View Controller-->
         <scene sceneID="GHs-dK-p2P">
             <objects>
-                <viewController id="Hzg-MI-Zqb" sceneMemberID="viewController">
+                <viewController id="Hzg-MI-Zqb" customClass="AddTaskViewController" customModule="CoreDataPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TlB-1B-FGs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,8 +60,11 @@
                                 <rect key="frame" x="182.5" y="244" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoO-eI-dMq">
-                                <rect key="frame" x="192" y="276.5" width="30" height="30"/>
+                                <rect key="frame" x="192" y="277" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButton:" destination="Hzg-MI-Zqb" eventType="touchUpInside" id="tEi-3n-Vsv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K09-Bm-vxf"/>
@@ -81,10 +84,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JMi-xv-or8"/>
+                    <connections>
+                        <outlet property="isImportant" destination="BXs-Bc-x9I" id="L0B-aP-jJF"/>
+                        <outlet property="textField" destination="fZl-hO-gj4" id="JN9-wp-7Fk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11A-cD-4VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2080" y="124"/>
+            <point key="canvasLocation" x="2079.7101449275365" y="123.88392857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W6e-aY-SoE">
