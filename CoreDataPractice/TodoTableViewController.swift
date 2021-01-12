@@ -55,5 +55,22 @@ class TodoTableViewController: UITableViewController {
         }
     }
     
-    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        if editingStyle == .delete {
+            // deleteだった場合、そのcellのindexPath.rowを定数Taskに入れる
+            let task = tasks[indexPath.row]
+            // それを削除する
+            context.delete(task)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            do {
+                tasks = try context.fetch(Task.fetchRequest())
+            }
+            catch {
+                print("読み込み失敗")
+            }
+            tableView.reloadData()
+        }
+
+    }
 }
