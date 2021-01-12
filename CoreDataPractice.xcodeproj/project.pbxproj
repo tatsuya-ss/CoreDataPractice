@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		755A5C4C25ADBAEC00B88F61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755A5C4B25ADBAEC00B88F61 /* AppDelegate.swift */; };
 		755A5C4E25ADBAEC00B88F61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755A5C4D25ADBAEC00B88F61 /* SceneDelegate.swift */; };
-		755A5C5025ADBAEC00B88F61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755A5C4F25ADBAEC00B88F61 /* ViewController.swift */; };
 		755A5C5325ADBAEC00B88F61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755A5C5125ADBAEC00B88F61 /* Main.storyboard */; };
 		755A5C5625ADBAEC00B88F61 /* CoreDataPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 755A5C5425ADBAEC00B88F61 /* CoreDataPractice.xcdatamodeld */; };
 		755A5C5825ADBAEE00B88F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755A5C5725ADBAEE00B88F61 /* Assets.xcassets */; };
 		755A5C5B25ADBAEE00B88F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755A5C5925ADBAEE00B88F61 /* LaunchScreen.storyboard */; };
+		755A5C6925ADC0BB00B88F61 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755A5C6825ADC0BB00B88F61 /* TodoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		755A5C4825ADBAEC00B88F61 /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755A5C4B25ADBAEC00B88F61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		755A5C4D25ADBAEC00B88F61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		755A5C4F25ADBAEC00B88F61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		755A5C5225ADBAEC00B88F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		755A5C5525ADBAEC00B88F61 /* CoreDataPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPractice.xcdatamodel; sourceTree = "<group>"; };
 		755A5C5725ADBAEE00B88F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		755A5C5A25ADBAEE00B88F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		755A5C5C25ADBAEE00B88F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755A5C6825ADC0BB00B88F61 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			children = (
 				755A5C4B25ADBAEC00B88F61 /* AppDelegate.swift */,
 				755A5C4D25ADBAEC00B88F61 /* SceneDelegate.swift */,
-				755A5C4F25ADBAEC00B88F61 /* ViewController.swift */,
+				755A5C6825ADC0BB00B88F61 /* TodoTableViewController.swift */,
 				755A5C5125ADBAEC00B88F61 /* Main.storyboard */,
 				755A5C5725ADBAEE00B88F61 /* Assets.xcassets */,
 				755A5C5925ADBAEE00B88F61 /* LaunchScreen.storyboard */,
@@ -140,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755A5C5025ADBAEC00B88F61 /* ViewController.swift in Sources */,
 				755A5C4C25ADBAEC00B88F61 /* AppDelegate.swift in Sources */,
+				755A5C6925ADC0BB00B88F61 /* TodoTableViewController.swift in Sources */,
 				755A5C4E25ADBAEC00B88F61 /* SceneDelegate.swift in Sources */,
 				755A5C5625ADBAEC00B88F61 /* CoreDataPractice.xcdatamodeld in Sources */,
 			);
