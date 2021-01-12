@@ -32,9 +32,14 @@ class TodoTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
         let task = tasks[indexPath.row]
-        cell.textLabel?.text = task.name!
+        
+        if task.isimportant{
+            cell.textLabel?.text = "🌟" + task.name!
+        } else {
+            cell.textLabel?.text = task.name!
+        }
         
         return cell
     }
@@ -49,4 +54,6 @@ class TodoTableViewController: UITableViewController {
             print("読み込み失敗")
         }
     }
+    
+    
 }
